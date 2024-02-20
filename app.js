@@ -9,7 +9,7 @@ let port = process.env.PORT || 3000;
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect("mongodb+srv://gohilsuryadeep3101:"+process.env.PASSPORT+"@cluster0.wmc1wne.mongodb.net/?retryWrites=true&w=majority");
+  await mongoose.connect("mongodb+srv://gohilsuryadeep3101:"+process.env.PASSWORD+"@cluster0.wmc1wne.mongodb.net/?retryWrites=true&w=majority");
 }
 
 const messageSchema = new mongoose.Schema({
